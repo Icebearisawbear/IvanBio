@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+  .therestofthebody {
+    font-family: 'Roboto' , sans-serif;
+  }
+  .title {
+    font-family: 'Roboto' , sans-serif;
+    color: white;
+  }
+</style>
+  <title>
+    Ivan's Bio
+  </title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="container" style="background-color: black; color: #bb00ff;">
+<h1 class="title">
+  <center>
+  Ivan Bio
+  </center>
+</h1>
+<hr>
+
+  <h4 class="therestofthebody" style="color: #9d9b9b; letter-spacing: 1px;">
+    My name is Ivan Alas, and in my spare time, I enjoy exploring my creative side. One of my favorite hobbies is drawing, where I get to express myself visually and bring my ideas to life on paper. In addition to drawing, I’m passionate about coding games. The process of creating something interactive and watching it come to life through coding is incredibly satisfying for me.
+Music also plays a big part in my life. I love playing the guitar, whether it's learning new songs or just jamming on my own. Singing is another outlet for me, and I have the privilege of singing in an ensemble. There's something special about harmonizing with others and sharing the experience of making music together.
+Whether it's through art, technology, or music, I enjoy being creative and constantly challenging myself to learn and grow in these areas.
+  </h4>
+<hr>
+<h2><center>
+<a href="https://icebearisawbear.github.io/WBB/" class="button" style="font-family: 'Roboto', sans-serif;">Return back to the main page!</a></h2></center>
+  
+  <p><pre align = "center" style = "color: white;"> &copy Highschool DXD 2024 </pre></p>
+
+  <script>
+      (function() {
+          document.addEventListener("mousemove", parallax);
+          const elem = document.querySelector("#container");
+
+          function parallax(e) {
+              let _w = window.innerWidth/2;
+              let _h = window.innerHeight/2;
+              let _mouseX = e.clientX;
+              let _mouseY = e.clientY;
+              let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+              let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+              let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+              let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+              elem.style.backgroundPosition = x;
+          }
+      })();
+  </script>
+
+</body>
+
+</html>
